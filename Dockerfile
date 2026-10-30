@@ -6,9 +6,9 @@
 #
 # Tip: use the files in apps/<your-language>/.
 
-# FROM <choose a base image for your language>
-# WORKDIR /app
-# COPY . .
+FROM python:3.15
+WORKDIR /app
+COPY apps/python/app.py /app/app.py
 # RUN <build your app, if it needs a build step>
-# EXPOSE 8080
-# CMD ["<command that starts your app>"]
+EXPOSE 8080
+CMD ["python", "app.py"]
