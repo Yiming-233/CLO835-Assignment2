@@ -10,19 +10,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: # TODO
+  name: a2-app
 spec:
-  replicas: # TODO  (3)
+  replicas: 3
   selector:
     matchLabels:
-      app: # TODO
+      app: a2-app
   template:
     metadata:
       labels:
-        app: # TODO
+        app: a2-app
     spec:
       containers:
-        - name: # TODO
-          image: # TODO  e.g. <your-dockerhub-username>/<repo>:0.2
+        - name: a2-app
+          image: ypan69/a2-app:0.2
           ports:
             - containerPort: 8080
