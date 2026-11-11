@@ -41,5 +41,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/a2-app:0.2
+            ${{ secrets.DOCKERHUB_USERNAME }}/a2-app:0.3
             ${{ secrets.DOCKERHUB_USERNAME }}/a2-app:${{ github.sha }}
